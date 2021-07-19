@@ -28,7 +28,7 @@ header {
   }
 nav {
     display: inline-flex;
-  text-align: right;
+    text-align: right;
   }
 
 a {
@@ -54,8 +54,8 @@ main {
     }
 
 #mission {
-    width: 1200px;
-    height: 700px;
+    width: 54.54rem;
+    height: 31.81rem;
     background-image: url(images/img-mission-background.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,11 +67,11 @@ main {
 .missionStatement{
     background-color: black;
     height: auto;
-    width: 1200px;
+    width: 54.54rem;
 }
 
 .featuredTea {
-    width: 1000px;
+    width: 45.45rem;
     height: auto;
 }
 
@@ -82,37 +82,55 @@ figure {
 }
 
 figure img {
-    width: 300px;
-    height: 200px;
+    width: 13.64rem;
+    height: 9.09rem;
   }
 
 figcaption {
-    padding-top: 10px;
+    padding-top: 0.45rem;
 }
 
 #locations {
-    width: 1200px;
-    height: 500px;
+    width: 54.54rem;
+    height: 22.72rem;
     background-image: url(images/img-locations-background.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-flow: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#locStat {
+    text-align: center;
+    width: 100%;
 }
 
 #add {
-    display: inline-flex;
-    width: 300px;
+    /*display: inline-flex;*/
+    width: 13.63rem;
     height: auto;
-    flex-direction: column;
+    /*flex-direction: column;*/
     background-color: black;
-    align-items: center;
-    margin: 15px 20px;
+    /*align-items: center;*/
+    text-align: center;
+    margin: 0.68rem 0.90rem;
 }
 
 #contact {
-    height: 200px;
+    height: 9.09rem;
 }
 
 footer {
     text-align: left;
-    margin-left: 20px;
+    margin-left: 0.9rem;
 }
+
+@media only screen and (max-width: 768px) {
+    nav {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: right;
+      }
+  }
